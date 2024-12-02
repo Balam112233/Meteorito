@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.1/dist/aframe-environment-component.min.js"></script>
+  </head>
+  
+  <body>
+    <a-scene>
+
+    <a-entity environment= 
+    "preset: default; 
+    skyType: gradient; 
+    skyColor: #4233ff;
+    horizonColor: #FF0040;
+    lighting: distant; 
+    ground:noise;
+    groundYScale: 4; 
+    groundTexture: walkernoise; 
+    groundColor: #33ffa2; 
+    groundColor2: #3B170B; 
+    dressing: mushrooms; 
+    dressingAmount: 50; 
+    dressingColor: #ff6133;
+    dressingScale: 1;
+    dressingVariance:1 1 1;
+    dressingUniformScale: false;
+    grid: 2x2;
+    gridColor: #FFFF00"> </a-entity>
+
+    <a-circle color="blue" position=" 0 2 -4"> </a-circle>
+    
+    <a-sphere src="#boxTexture" position="0 3 -5" rotation="0 45 45" scale="5 5 5"
+    animation="property: position; to: 0 10 -510; dir: alternate; dur: 4000; loop: true; easing:linear" ></a-sphere>
+
+    
+
+
+
+    <a-camera position="0 5 0"></a-camera>
+   
+  </a-scene>
+  </body>
+</html>
